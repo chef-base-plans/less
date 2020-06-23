@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.less?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=69&branchName=master)
+[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.less?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=81&branchName=master)
 
 # less
 
@@ -39,6 +39,22 @@ will add the following binaries to the PATH:
 * /bin/less
 * /bin/lessecho
 * /bin/lesskey
+
+For example:
+
+```bash
+$ hab pkg install core/less --binlink
+» Installing core/less
+☁ Determining latest version of core/less in the 'stable' channel
+→ Using core/less/530/20200305235121
+★ Install of core/less/530/20200305235121 complete with 0 new packages installed.
+» Binlinking lesskey from core/less/530/20200305235121 into /bin
+★ Binlinked lesskey from core/less/530/20200305235121 to /bin/lesskey
+» Binlinking lessecho from core/less/530/20200305235121 into /bin
+★ Binlinked lessecho from core/less/530/20200305235121 to /bin/lessecho
+» Binlinking less from core/less/530/20200305235121 into /bin
+★ Binlinked less from core/less/530/20200305235121 to /bin/less
+```
 
 #### Using an example binary
 
